@@ -51,8 +51,20 @@ export const social = [
 export const projects = [
   {
     id: 1,
-    url: 1,
-  }
+    url: "https://glade-color-generator.netlify.app/",
+  },
+  {
+    id: 2,
+    url: 'https://glade-carts.netlify.app/',
+  },
+  {
+    id: 3,
+    url: 'https://glade-cart.netlify.app/',
+  },
+  {
+    id: 4,
+    url: 'https://glade-meme-generator.netlify.app/',
+  },
 ]
 
 export const skills = [
