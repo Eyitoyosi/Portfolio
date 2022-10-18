@@ -42,7 +42,6 @@ const About = () => {
                   
                   <div className="skills">
                     <h1>Skills</h1>
-                    <div className="skills-container">
                       <ul className="my-skills">
                         {skills.map((language) => {
                           const { id, skill, nameOfSkill} = language
@@ -56,7 +55,6 @@ const About = () => {
                           )
                         })}
                       </ul>
-                    </div>
                   </div>
             </div>
         </section>

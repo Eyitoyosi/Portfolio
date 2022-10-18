@@ -22,7 +22,7 @@ const Footer = () => {
                 })}
             </ul>
             <div className="footers-trademark">
-                <h3>© Ayotunde's React Portfolio. GAEA®.</h3>
+                <h5>© Ayotunde's React Portfolio. GAEA®.</h5>
             </div>
             </div>
             </div>
