@@ -1,84 +1,63 @@
-import {useState} from 'react'
-import { IoLocationOutline } from  'react-icons/io5'
-import { AiOutlineMail } from 'react-icons/ai'
-import { FaPhoneAlt } from 'react-icons/fa'
+import {useRef} from 'react';
+import { IoLocationOutline } from  'react-icons/io5';
+import { AiOutlineMail } from 'react-icons/ai';
+import { FaPhoneAlt } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        firstName: "", 
-        lastName: "", 
-        email: "",
-        message: ""}
-    )
 
-function handleChange(event){
-    setFormData(prevformData => {
-        return {
-            ...prevformData, 
-            [event.target.name]: event.target.value
-        }
-    })
-}
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_xvs918r', 'template_9wwr4g2', form.current, 'IjWJUUaGRazWslbmA')
+        .then((result) => {
+            console.log(result.text);
+            e.target.reset();
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
     return ( 
         <div className="contact">
             <div className="form-container">
-                <form action="" className='form'>
+                <form ref={form} onSubmit={sendEmail}>
                     <div>
                         <h2>Contact form</h2>
-                        <label>First Name:</label>
                         <br />
                         <input 
                         type="text" 
-                        placeholder='Your First Name'
-                        onChange={handleChange}
-                        name="firstName"
-                        value={formData.firstName}
+                        placeholder='Your Name'
+                        name="user_name"
                         className="form--input"
                         />
                     </div>
                     <br />
                     <div>
-                        <label>Last Name:</label>
-                        <br />
-                        <input 
-                        type="text" 
-                        placeholder='Your Last Name'
-                        onChange={handleChange}
-                        name="lastName"
-                        value={formData.lastName}
-                        className="form--input"
-                        />
-                    </div>
-                    <br />
-                    <div>
-                        <label>Email:</label>
-                        <br />
                         <input 
                         type="email"
                         placeholder='Your Email'
-                        onChange={handleChange}
-                        name="email"
-                        value={formData.email}
+                        name="user_email"
                         className="form--input"
                          />
                     </div>
                     <br />
-                    <br />
                     <div>
-                        <label>Leave A Message:</label>
+                        <label>Leave a message:</label>
                         <br />
                         <textarea 
-                        value={formData.message}
                         placeholder="Message"
-                        onChange={handleChange}
-                        name="message" cols="30" rows="10" />
+                        name="message" cols="30" rows="10"
+                        />
                     </div>
                     <br />
                     <br />
-                    <input type="button"
-                    value='Submit' 
-                    className='form--submit' />
+                    <input type='Submit' 
+                    className='form--submit'
+                    defaultValue="Send"
+                    />
                 </form>
             </div>
             <div className='contact-details'>

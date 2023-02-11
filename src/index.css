@@ -125,7 +125,7 @@ body {
 
 
 .contact-details{
-  height: 700px;
+  height: 550px;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
@@ -133,7 +133,7 @@ body {
 }
 
 .contact-details>h2{
-  padding-bottom: 1em;
+  padding-bottom: 10px;
 }
 
 .form-container {
@@ -209,7 +209,6 @@ textarea{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0 0 0/0.05);
 }
 .changeColor{
   color: #555;
@@ -222,6 +221,10 @@ padding-top: 20px;
 }
 .footer-follow{
   padding-top: 20px;
+}
+.footer-follow h2{
+  font-size: 1.94rem;
+  font-weight: 400;
 }
 
 .social-icons{ 
@@ -380,8 +383,6 @@ padding-top: 20px;
   align-items: center;
   border-radius: 20px;
   background-color: rgb(97, 24, 85);
-  display: flex;
-  flex-direction: row;
   cursor: pointer;
 }
 .card-image{
@@ -403,7 +404,7 @@ padding-top: 20px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 10px 15px -3px rgb(0 0 0/0.1);
   width: 250px;
   height: 50px;
@@ -450,7 +451,7 @@ padding-top: 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem;
+      padding: 0.1rem;
     }
     .nav-header {
       padding: 0;
@@ -480,6 +481,7 @@ padding-top: 20px;
     }
   .contact-details{
     padding-top: 40px;
+    padding-left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -503,6 +505,9 @@ padding-top: 20px;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+    .profile-btn{
+      margin-right: 0px;
     }
     .my-skills{
       display:flex;

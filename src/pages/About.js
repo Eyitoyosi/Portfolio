@@ -19,13 +19,15 @@ const About = () => {
                        <p>
                          I love programming, designing and building responsive user interfaces in which 
                          I'm passionate about. Aside from work, I'm a big fan of basketball, playing video 
-                         games and basically up for adventure that changes my perspective for better in life .
+                         games and basically up for adventures that changes my perspective of life for better.
                        </p>
                         <p>
                          I work hard and i'm also a strong advocate for writing clean code.
                          Currently, i'm looking for the right opportunity to evolve and become
-                         a seasoned front-end developer with valuable experience. looking for a role in a company
-                         with the opportunity to work with the latest technologies on challenging and diverse projects.    
+                         a seasoned front-end developer with valuable experience. An entry-level 
+                         role in a company with an opportunity to work with the latest technologies 
+                         on challenging and diverse projects which will enable me to grow will be 
+                         much appreciated.    
                         </p>
                    </div>
                   </div>
@@ -46,8 +48,8 @@ const About = () => {
                         {skills.map((language) => {
                           const { id, skill, nameOfSkill} = language
                           return(
-                            <div>
-                            <li key={id} className="individual-skill">
+                            <div  key={id} >
+                            <li className="individual-skill">
                               {skill}
                               <span> {nameOfSkill}</span>
                             </li>

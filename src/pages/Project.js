@@ -7,11 +7,11 @@ const Projects = () => {
                     {projects.map((project) => {
                         const {id, url, name, image, description} = project
                         return(
-                            <div className="project-info">
+                            <div className="project-info" key={id}>
                                 <a href={url} target="_blank" rel="noopener noreferrer">
                                     <div>
                                         <div>
-                                           <img key={id} src={image} alt={name} className="card-image"/>
+                                           <img src={image} alt={name} className="card-image"/>
                                         </div>
                                         <div className="card-name">
                                            <h3>{name}</h3>

@@ -3,10 +3,9 @@ import { social } from "./data";
 const Footer = () => {
     return ( 
         <footer>
-            <hr />
             <div className="footer">
             <div className="footer-follow">
-                <h2>Reach Me!</h2>
+                <h2>Get in Touch</h2>
             </div>
             <div>
             <ul className="social-icons">

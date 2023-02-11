@@ -65,7 +65,7 @@ export const projects = [
     url: 'https://glade-carts.netlify.app/',
     name: 'Cart',
     image: Project1,
-    description: <span>A responsive React plattform used for shopping electronic gadget</span>,
+    description: <span>A responsive React plattform used for shopping electronic devices</span>,
   },
   {
     id: 3,
