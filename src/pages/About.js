@@ -4,6 +4,13 @@ import { skills } from "../data";
 
 
 const About = () => {
+  function handleDownload() {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'https://drive.google.com/file/d/18kQApbkYM8UauB36VzOfuAZ3xVYuU1JE/view?usp=share_link';
+    downloadLink.download = 'ayo-cv.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+  }
     return ( 
         <section className="profile-container">
             <div>
@@ -38,7 +45,7 @@ const About = () => {
                       </div>
                     </Link>  
                       <div>
-                          <button className="profile-btn">Download CV</button>
+                          <button className="profile-btn" onClick={handleDownload}>Download CV</button>
                       </div>
                   </div>
                   

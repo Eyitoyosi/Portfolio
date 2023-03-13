@@ -5,42 +5,21 @@ import Contact from './pages/Contact'
 import Home from './pages/Home';
 import Footer from './Footer';
 import Projects from './pages/Project';
-import { useState } from 'react';
-import { ThemeProvider} from "styled-components"
 
-const LightTheme = {
-  pageBackground: "white",
-  titleColor: "#dc658b",
-  tagLineColor: "black"
-};
-
-const DarkTheme = {
-  pageBackground: "#282c36",
-  titleColor: "lightpink",
-  tagLineColor: "lavender"
-}
-
-const themes = {
-  light: LightTheme,
-  dark: DarkTheme
-}
 
 
 function App() {
-  const [ theme, setTheme ] = useState("light")
   return ( 
-    <ThemeProvider theme={themes[theme]}>
     <Router>
-      <Navbar theme={theme} setTheme={setTheme}/>
+      <Navbar/>
       <Routes>
-        <Route path="/" element={<Home theme={theme}/>}/>
-        <Route path="/about" element={<About theme={theme}/>}/>
-        <Route path="/projects" element={<Projects theme={theme}/>}/>
-        <Route path="/contact" element={<Contact theme={theme}/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/projects" element={<Projects/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <Footer />
     </Router>
-    </ThemeProvider>
   )
 }
 

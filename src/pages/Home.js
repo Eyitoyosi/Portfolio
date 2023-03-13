@@ -1,6 +1,14 @@
 
 
 const Home = () => {
+  function handleDownload() {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'https://drive.google.com/file/d/18kQApbkYM8UauB36VzOfuAZ3xVYuU1JE/view?usp=share_link';
+    downloadLink.download = 'ayo-cv.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+  }
+
     return ( 
         <div className="home-container">
             <div className="home-intro">
@@ -9,7 +17,7 @@ const Home = () => {
                   simpler by creating, symplifying and bringing to life futuristic ideas for websites, one step at a time.
               </h3>
               <div>
-                <button className="cv-button">Download CV</button>
+                <button className="cv-button" onClick={handleDownload}>Download CV</button>
               </div>
             </div>
             <div className="hero--section">
