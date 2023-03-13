@@ -3,7 +3,7 @@
 const Home = () => {
   function handleDownload() {
     const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://drive.google.com/file/d/18kQApbkYM8UauB36VzOfuAZ3xVYuU1JE/view?usp=share_link';
+    downloadLink.href = 'https://drive.google.com/file/d/1MWlhxvAeA3Za3HEybFPfKfES8kJlL1V3/view?usp=share_link';
     downloadLink.download = 'ayo-cv.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();
