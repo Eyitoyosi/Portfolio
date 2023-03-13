@@ -121,7 +121,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 2.5rem;
 }
 
 
@@ -240,7 +240,7 @@ padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5rem;
+  padding: 2.5rem;
   width: 100%;
 }
 
@@ -323,7 +323,7 @@ padding-top: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .home-container{
-  padding: 5rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: row;
 }
@@ -375,6 +375,7 @@ padding-top: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .project-content{
   display: grid;
@@ -519,14 +520,18 @@ padding-top: 20px;
     .profile-btn{
       margin-right: 0px;
     }
+    /*check if problem persisit*/
     .my-skills{
       display:flex;
       flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
 
     }
     .individual-skill{
       flex: 50%;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     .home-container{
       padding: 5rem;
@@ -536,9 +541,9 @@ padding-top: 20px;
     .hero{
       height: auto;
       max-width: 100%;
-      margin-top: 150px;
-      margin-left: 0px;
+      margin-top: 50px;
     }
+    
   }
   @media screen and (max-width:640px) {
     .project-content{
