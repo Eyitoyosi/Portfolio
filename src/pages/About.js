@@ -1,6 +1,7 @@
 import photo from "../Images/myphoto.jpeg";
 import { Link } from "react-router-dom";
 import { skills } from "../data";
+import { FaDownload } from "react-icons/fa";
 
 
 const About = () => {
@@ -45,7 +46,7 @@ const About = () => {
                       </div>
                     </Link>  
                       <div>
-                          <button className="profile-btn" onClick={handleDownload}>Download CV</button>
+                          <button className="profile-btn" onClick={handleDownload}><span><FaDownload /></span> Download CV</button>
                       </div>
                   </div>
                   

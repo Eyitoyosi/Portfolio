@@ -323,7 +323,7 @@ padding-top: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .home-container{
-  padding: 2.5rem;
+  padding: 5rem;
   display: flex;
   flex-direction: row;
 }
@@ -335,11 +335,11 @@ padding-top: 20px;
   width: 100%;
 }
 .home-intro>h2{
-  text-align: left;
+  text-align: center;
 }
 .home-intro>h3{
   color: rgb(107 114 128);
-  text-align: left;
+  text-align: center;
 }
 .hero-section{
   max-width: 100%;
@@ -484,6 +484,9 @@ padding-top: 20px;
       padding: 0;
       background: transparent;
     }
+    .home-intro h2{
+      text-align: right;
+    }
   }
  @media screen and (max-width:900px) {
   .contact{
@@ -534,7 +537,7 @@ padding-top: 20px;
       margin-bottom: 20px;
     }
     .home-container{
-      padding: 5rem;
+      padding: 3rem;
       display: flex;
       flex-direction: column;
     }

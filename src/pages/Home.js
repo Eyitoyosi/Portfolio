@@ -1,4 +1,4 @@
-
+import { FaDownload } from "react-icons/fa";
 
 const Home = () => {
   function handleDownload() {
@@ -13,11 +13,11 @@ const Home = () => {
         <div className="home-container">
             <div className="home-intro">
               <h2>Hey :), I'm Ayotunde Alabi</h2>
-              <h3>I am a react frontend developer with a particular interest in making things
+              <h3>A react frontend developer with a particular interest in making things
                   simpler by creating, symplifying and bringing to life futuristic ideas for websites, one step at a time.
               </h3>
               <div>
-                <button className="cv-button" onClick={handleDownload}>Download CV</button>
+                <button className="cv-button" onClick={handleDownload}><span><FaDownload /></span> Download CV</button>
               </div>
             </div>
             <div className="hero--section">
